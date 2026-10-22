@@ -12,7 +12,6 @@ import {
   Presentation,
   PlayCircle,
   RotateCcw,
-  Sparkles,
   Mail,
   Linkedin,
   Globe,
@@ -22,7 +21,7 @@ import {
 type ActiveTab = 'neuron' | 'train' | 'challenge';
 
 export function App() {
-  const [activeTab, setActiveTab] = useState<ActiveTab>('train');
+  const [activeTab, setActiveTab] = useState<ActiveTab>('neuron');
   const [presentationMode, setPresentationMode] = useState<boolean>(false);
   const [activeExperimentId, setActiveExperimentId] = useState<
     'A' | 'B' | 'C' | 'D' | null
@@ -36,7 +35,7 @@ export function App() {
 
   const handleResetDemoDefaults = () => {
     setActiveExperimentId(null);
-    setActiveTab('train');
+    setActiveTab('neuron');
     setResetKey((k) => k + 1);
   };
 
@@ -59,9 +58,6 @@ export function App() {
                 <h1 className="text-base md:text-lg font-extrabold tracking-tight text-white">
                   Neural Network Lab
                 </h1>
-                <span className="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-turquoise/15 text-turquoise border border-turquoise/30">
-                  <Sparkles className="w-3 h-3" /> Masterclass Live 20 min
-                </span>
               </div>
               <p className="text-xs text-slate-400 hidden md:block">
                 Du Machine Learning (scikit-learn) aux Réseaux de Neurones Profonds (TensorFlow.js en temps réel)

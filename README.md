@@ -1,5 +1,7 @@
 # Neural Network Lab — Masterclass Deep Learning Interactive
 
+🌐 **Démo en ligne (Live Render) :** [https://liora-beky.onrender.com](https://liora-beky.onrender.com)
+
 Application web interactive de simulation, de visualisation et d'enseignement du Deep Learning, conçue pour animer une **Masterclass de 20 minutes en direct (Zoom / Présentiel)** à destination de Data Scientists et d'étudiants maîtrisant déjà `scikit-learn`.
 
 Tous les entraînements, calculs de gradients, prédictions probabilistes et courbes d'apprentissage sont **100 % réels** et exécutés en temps réel dans le navigateur via **TensorFlow.js**.
@@ -50,7 +52,7 @@ Ouvrez ensuite l'URL affichée dans le terminal (par défaut `http://localhost:5
 L'application s'articule autour d'une enveloppe principale (`src/App.tsx`) qui coordonne la navigation, les outils de présentation pour l'animateur et les ressources pédagogiques :
 
 ### A. En-tête de Navigation & Contrôles Formateur (Header)
-- **Identité visuelle :** Logo **Neural Network Lab**, badge *« Masterclass Live 20 min »* et sous-titre résumant le fil conducteur (*Du Machine Learning `scikit-learn` aux Réseaux de Neurones Profonds*).
+- **Identité visuelle :** Logo **Neural Network Lab** et sous-titre résumant le fil conducteur (*Du Machine Learning `scikit-learn` aux Réseaux de Neurones Profonds*).
 - **Sélecteur des 3 Onglets Principaux :**
   1. `1. Explore the Neuron` — Anatomie mathématique et géométrique d'un neurone unique.
   2. `2. Train a Neural Network` — Laboratoire complet d'entraînement TensorFlow.js en temps réel.
